@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>YouTube</title>
+    <style>
+        .searches{
+            height: 52px;
+            width: 300px;
+        }
+        .change-my-color {
+            fill: red;
+        }
+        .rows{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 25px;
+            
+        }
+        .flex {
+            display: flex;
+        }
+        .gap{
+            gap: 2rem;
+        }
+        .mt-2{
+            margin-top: 0.5rem;
+        }
+        .input-group{
+            width: 60%;
+        }
+        /*.boxes{
+            
+        }*/
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark border-bottom  navbar-expand-sm p-3">
+            <div class="navbar-brand text-danger" href="#" style="color: red;">
+                <svg class="change-my-color" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            </div>  
+              <h3 class="mt-1"><b>YouTube</b></h3>
+            
+          
+                <div class="input-group">
+                    <input type="text" style=" margin-left: 50px;" class="form-control searches" placeholder="Search" id="search_box" aria-label="search" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><button class="btn " id="search"><svg class="btnSearch" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button></span>
+                  </div>
+                  
+                </div>
+             
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mic ml-4" viewBox="0 0 16 16">
+                <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+              </svg>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto " >
+                <li class="nav-item active list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-video mr-3" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                  </svg></li>
+                <li class="nav-item active list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-grid-3x3-gap mr-3" viewBox="0 0 16 16">
+                    <path d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/>
+                  </svg></li>
+                <li class="nav-item active list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell mr-3" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                  </svg></li>
+                <li class="nav-item active list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle mr-3" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg></li>
+            </ul>
+            </div>
+          </nav>
+        </header><br/>
+        <div id="results" class="rows m-2"></div>
+       
+        <script>
+            const types = {
+                video:"youtube#video",
+                channel:"youtube#channel"
+            }
+           
+            Object.freeze(types)
+    
+            window.addEventListener("load",function(){
+                const btn = document.getElementById("search");
+                btn.addEventListener("click",()=>handleSearch());
+            })
+            function getYoutube(q){
+                
+                return fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${q}&maxResults=20&key=AIzaSyBNhK859DI3s-4myLNwuPJpgn7Do41ffIo`)
+                .then(res=>res.json())
+                
+            }
+    
+            function createYoutubeVideos(data){
+                console.log(data)
+                const div = document.createElement("div");
+                if(data.id.kind === types.channel){
+                    return false;
+                }
+                div.innerHTML = `<iframe width="300" height="200" src="https://www.youtube.com/embed/${data.id.videoId}"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; 
+                autoplay; clipboard-write; 
+                encrypted-media; 
+                gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>`;
+                return div
+            }
+    
+          
+    
+            async function handleSearch(token){
+                
+                const search = document.getElementById("search_box").value;
+                console.log(search)
+                try{
+                    const {
+                        items: results,
+                        pageInfo:{
+                            resultsPerPage,
+                            totalResults
+                        } 
+                       
+                    }= await getYoutube(search);
+                        console.log(results,resultsPerPage,totalResults);
+                        
+                        const allCards=[];
+                        for(let video of results){
+                            const card = createYoutubeVideos(video);
+                            if(card){
+                            allCards.push(card);
+                            }
+                        }
+                        const resContainer = document.getElementById('results');
+                        resContainer.innerHTML = null;
+                        resContainer.append(...allCards);
+                    }
+            
+                catch{
+    
+                }
+    
+            }
+        </script>
+</body>
+</html>
